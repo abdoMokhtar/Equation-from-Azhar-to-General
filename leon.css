@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Cairo", sans-serif;
+  background-image: url(pexels-eberhardgross-1624496.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  height: 500px;
+  margin: 0 20px;
+  border-radius: 35px;
+  flex-wrap: wrap;
+  background: white;
+  opacity: 0.8;
+}
+h2 {
+  position: absolute;
+  padding: 15px;
+  color: white;
+  top: 40px;
+}
+.input {
+  flex-direction: column;
+  gap: 20px;
+  margin-top: -40px;
+  padding: 10px;
+}
+label {
+  font-size: 20px;
+}
+input {
+  text-align: center;
+  font-size: 18px;
+  font-family: "Cairo", sans-serif;
+  padding: 5px 20px;
+  border-radius: 5px;
+  color: black;
+  border: 1px solid#ee8456;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+button {
+  font-family: "Cairo", sans-serif;
+  width: 90px;
+  height: 35px;
+  border: none;
+  background-color: #009688;
+  border-radius: 10px;
+  color: black;
+  font-size: 15px;
+}
+
+.result {
+  margin-top: -100px;
+  gap: 15px;
+}
+.result div {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.result div h3 {
+  padding: 15px;
+  font-size: 30px;
+}
+
+.result span {
+  font-size: 40px;
+}
+.result span.one {
+  color: #009688;
+}
+.result span.two {
+  color: #e91e38;
+}
+
+@media (min-width: 310px) {
+  .container {
+    width: 350px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .result span {
+    font-size: 30px;
+  }
+  .result div h3 {
+    font-size: 18px;
+  }
+}
+@media (min-width: 700px) and (max-width: 1439px) {
+  .container {
+    width: 500px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+}
+@media (min-width: 1440px) {
+  .container {
+    width: 660px;
+    height: 450px;
+  }
+  .input {
+    order: 1;
+  }
+  h2 {
+    font-size: 40px;
+  }
+}
