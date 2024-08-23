@@ -1,0 +1,1 @@
+# Equation-from-Azhar-to-General
